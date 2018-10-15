@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>First Blog</title>
+</head>
+
+<body>
+
+<div> <form enctype="multipart/form-data" method='post' action=''>
+    {% csrf_token %}
+<p>{{ form.errors }}</p>
+<p>{{ form.non_field_errors }}</p>
+<table>
+{{form.as_table}}
+<tr> <td>&nbsp;</td><td> <input type='submit' value='Submit' /> </td> </tr>
+</table>
+</form> </div>
+<!--<div class="container">-->
+    <!--<h1>First Blog</h1>-->
+    <!--<h2>{{ title }}</h2>-->
+    <!--<h3>Posted on {{ date }} by {{ author }}</h3>-->
+    <!--<p>{{ body }}</p>-->
+
+<!--</div>-->
+
+
+
+</body>
+
+</html>
